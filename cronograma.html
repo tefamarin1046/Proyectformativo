@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title> NEEDLEBOX - marco</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  
+  <!--iconos-->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- Font Awesome (más iconos) -->
+  <link rel="stylesheet" href="lib/css/all.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="lib/css/adminlte.min.css">
+
+  <!--mis putos estilos-->
+  <link rel="stylesheet" href="myCss\insumosStyle.css">
+
+  <!-- jQuery--> 
+  <script src="lib\js\jquery.min.js"></script>
+
+  <!--bootstrap-->
+  <script src="lib/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AdminLTE App  -->
+  <script src="lib\js\adminlte.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="myImg/needlebox-logo.png" alt="AdminLTELogo">
+  </div>
+
+  <!-- header-->
+  <header class="cont-bar">
+     
+      <div name="logo_y_nombre" class="logo-nom">
+        <img src="myImg/needlebox-logo.png" alt="Neddlebox logo" class="logito">
+        <span class="Needlebox">NEEDLEBOX</span>
+      </div>
+
+
+        <!-- Left navbar links -->
+
+        <ul class="navbar-ul">
+          
+                
+          <li class="navbar-item">
+            <a href="#" class="nav-link">PERFIL</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="nav-link">CONFIGURACIÓN</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="#" class="nav-link">REPORTAR ERROR</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="#" class="nav-link">AYUDA</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="nav-link">CONTACTAR A LOS DESARROLLADORES</a>
+          </li>
+
+        </ul>  
+              
+                <!--barra de opciones de modulos-->
+        <div class="nav-bar-esp">
+          
+              <a class="mod-op  c-inicio" href="index.html">                      
+                <span class="mod-name">Inicio</span>
+              </a>   
+          
+              <!--CLIENTES-->
+              <a class="mod-op  c-client" href="#">                      
+                <span class="mod-name">Clientes</span>
+              </a>
+
+                <!--CRONOGRAMA-->
+              <a class="mod-op  c-crono" href="#" >
+                  <span class="mod-name">Cronograma</span>
+              </a>
+
+                <!--PEDIDOS-->
+              <a class="mod-op  c-ped" href="#">
+                <span class="mod-name">Pedidos</span>
+              </a>
+
+        </div>
+        <!--fin barra de modulos-->  
+      </header>
+  <!-- /.navbar -->
+
+  <!--Encabezado de sección-->
+  <div class="mod-act c-insu"><div class="cover"><span class="mod-act-nom">Cronograma</span></div></div>
+
+
+ 
+  <!--Aqui iria el contenido-->
+  <div class="contenido">
+
+
+<!--menu copypaste de adminte---------------------------------------------------------------------------------------------------->
+
+    <div class="copypaste content-wrapper" style="min-height: 2644px;">
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-primary">
+              <div class="card-header" style="background-color: rgb(194, 0, 0) !important;">
+                <h3 class="card-title">Registro Pedidos</h3>
+  
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body" style="display: block;">
+                <div class="form-group">
+                  <label for="inputCliente">Cliente</label>
+                  <input type="text" id="inputCliente" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="inputFechaDeRecibo">Fecha de recibo</label>
+                  <input type="text" id="inputFechaDeRecibo" type="date" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="inputTipoPedido">Tipo de pedido</label>
+                  <select id="inputTipoPedido" class="form-control custom-select">
+                    <option selected="" disabled="">Select one</option>
+                    <option>Colección</option>
+                    <option>Modificación</option>
+                    <option>Reparación</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="inputFechaLimEntrega">Fecha Limite de Entrega</label>
+                  <input type="text" id="inputFechaLimEntrega" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="inputLugarEntrega">Lugar de Entrega</label>
+                  <input type="text" id="inputLugarEntrega" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="inputMedioEntrega">Medio de Entrega</label>
+                    <select id="inputMedioEntrega" class="form-control custom-select">
+                        <option selected="" disabled="">Select one</option>
+                        <option>Correo</option>
+                        <option>Recoger en la fabrica</option>
+                  </div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="#" class="btn btn-secondary">Cancel</a>
+            <input type="submit" value="Create new Porject" class="btn btn-success float-right">
+          </div>
+        </div>
+      </section>
+      <!-- /.content -->
+    </div>
+
+<!------------------fin menu------------------------------------------------------------------------------------------------------------------->
+
+<!--tabla------------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Fixed Header Table</h3>
+
+        <div class="card-tools">
+          <div class="input-group input-group-sm" style="width: 150px;">
+            <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-default">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body table-responsive p-0" style="height: 300px;">
+        <table class="table table-head-fixed text-nowrap">
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Fecha de recibo</th>
+              <th>Tipo de pedido</th>
+              <th>fecha de Realización del Proceso</th>
+              <th>Fecha limite de Entrega</th>
+              <th>Lugar de En
+                  trega</th>
+              <th>Medio de Entrega</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Estefanía Marín</td>
+              <td>12/03/2021</td>
+              <td>Colección</td>
+              <td>13/03/2021</td>
+              <td>19/08/2021</td>
+              <td>Cra 59 # 70-349</td>
+              <td>Correo</td>
+              <td><input type="submit" value="✏️" class="btn btn-success float-right"></td>
+              <td><input style="background-color: rgb(255, 51, 51 ) !important;" type="submit" value="🗑️" class="btn btn-success float-right"></td>
+            </tr>
+            <tr>
+                <td>Daniel Silva</td>
+                <td>20/04/2021</td>
+                <td>Colección</td>
+                <td>13/03/2021</td>
+                <td>19/08/2021</td>
+                <td>Oficina 1214 ed Coltejer</td>
+                <td>Correo</td>
+                <td><input type="submit" value="✏️" class="btn btn-success float-right"></td>
+                <td><input  style="background-color: rgb(255, 51, 51 ) !important;" type="submit" value="🗑️" class="btn btn-success float-right"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+</div>
+
+
+<!------fin tabla--------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+    <!--fin del puto copypaste de adminlte-->
+
+
+
+  </div>
+
+  <!--fin del div para el contenido-->
+
+
+ <!-- Main Footer -->
+  
+<footer >
+  <div class="copyaut">
+    <span class="nomproy" href="#">Needlebox.</span> 
+    <br> 
+    <span class="año"><strong> &copy; 2021 </strong></span> 
+    <br> 
+    
+    <span class="disclaimer">Borrador para proyecto formativo del equipo Needlebox 
+      (Estefania Marín, Juan Nolasco y <a href="https://codepen.io/Juan_FM">Juan Mejía</a>) 
+        para la Técnica de Programación de Software - <a href="https://www.sena.edu.co">SENA</a></span>
+  </div>
+
+</footer>
+
+
+</div><!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+</body>
+</html>
